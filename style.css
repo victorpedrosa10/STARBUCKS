@@ -120,6 +120,6 @@ button:hover {
     top: 0;
     left: 0;
     background: #017143;
-    clip-path: circle(600px at right 800px);
+    clip-path: circle(550px at right 700px);
     z-index: -1;
 }
