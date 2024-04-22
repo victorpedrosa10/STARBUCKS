@@ -15,24 +15,25 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
 }
 
 .caixa-texto {
-    width: 600px;
+    width: 500px;
 }
 
 .caixa-imagem {
     width: 600px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 250px;
+    margin-top: 70px;
     
 }
 
 .menu {
     display: flex;
     justify-content: center;
+    margin-top: -60px;
 }
 
 h2 {
