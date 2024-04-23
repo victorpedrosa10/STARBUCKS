@@ -20,18 +20,42 @@
         </div>
 
         <div class="caixa-imagem">
-            <img src="./images/Starbucks-Coffee-PNG-Transparent.png" alt="copo starbucks" class="starbucks">
+            <img src="./images/thumb1.png" alt="copo starbucks" class="starbucks">
         </div>
     </div>
     <div class="menu">
-        <img src="./images/Starbucks-Coffee-PNG-Transparent.png" class="thumb1">
-        <img src="./images/thumb (2).png" class="thumb2">
-        <img src="./images/thumb (3).png" class="thumb3">
+        <img src="./images/thumb1.png" class="thumb1">
+        <img src="./images/thumb2.png" class="thumb2">
+        <img src="./images/thumb3.png" class="thumb3">
     </div>
     <div class="circulo"></div>
 
 </body>
 <script>
-    
+    let circulo = document.querySelector(".circulo")
+   let imgCopo = document.querySelector(".starbucks")
+   let verde = document.querySelector(".thumb1")
+   let amarelo = document.querySelector(".thumb2")
+   let rosa = document.querySelector(".thumb3")
+
+   verde.addEventListener("click", () => {
+       imgCopo.src = "./images/thumb1.png"
+       circulo.style.background = "#017143"
+       imgCopo.style.position = "absolute"
+       imgCopo.style.right = "100px"
+   })
+
+   amarelo.addEventListener("click", () => {
+       imgCopo.src = "./images/thumb2.png"
+       imgCopo.style.position = "absolute"
+       imgCopo.style.right = "10px"
+       circulo.style.background = "#b26e3f"
+   })
+
+   rosa.addEventListener("click", () => {
+       imgCopo.src = "./images/thumb3.png"
+       circulo.style.background = "#d752b1"
+   })
+
 </script>
 </html>
