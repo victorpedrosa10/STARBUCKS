@@ -127,3 +127,99 @@ button:hover {
     clip-path: circle(550px at right 700px);
     z-index: -1;
 }
+
+@media (max-width: 1000px) {
+    body {
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 120vh;
+  
+    }
+    .caixa-texto {
+      width: 80vw;
+      max-width: 400px;
+    }
+  
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+    }
+  
+    .caixa-imagem {
+      width: 400px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0px;
+      
+    }
+  .caixa-imagem img{
+    height: 50vh;
+  }
+    .menu {
+      display: flex;
+      position: relative;
+      top: 300px;
+      justify-content: center;
+    }
+  
+    .circulo {
+      top: -800px;
+      right: -700px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+   
+    
+    .conteudo {
+      height: 88vh;
+    }
+    .caixa-texto {
+      width: 80vw;
+      max-width: 400px;
+    }
+  
+    .circulo {
+      top: -800px;
+      right: -800px;
+    }
+  
+    .menu {
+      display: flex;
+      position: relative;
+      
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    body{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .logo{
+      width: 90px;
+    }
+    span{
+      font-size: 55px;
+    }
+  .circulo{
+    
+  }
+  .caixa-imagem img{
+    width: 35vh ;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+  }
+  }
+  @media (max-width: 380px){
+    
+    }
+  
