@@ -19,11 +19,11 @@ body {
 }
 
 .caixa-texto {
-    width: 500px;
+    width: 600px;
 }
 
 .caixa-imagem {
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: flex-end;
     margin-top: 70px;
@@ -33,7 +33,9 @@ body {
 .menu {
     display: flex;
     justify-content: center;
-    margin-top: -60px;
+    position: absolute;
+    bottom: 00px;
+    left: 400px;
 }
 
 h2 {
@@ -71,26 +73,28 @@ button:hover {
 }
 
 .starbucks {
-    width: 340px;
+    height: 420px;
     z-index: 2;
+    padding: 0px;
 }
 
 .thumb1 {
-    width: 100px;
+    width: 65px;
     cursor: pointer;
     transition: 0.8s;
     margin: 10px;
+    margin-right: 30px;
 }
 
 .thumb2 {
-    width: 115px;
+    width: 130px;
     cursor: pointer;
     transition: 0.8s;
     margin: 10px;
 }
 
 .thumb3 {
-    width: 95px;
+    width: 110px;
     cursor: pointer;
     transition: 0.8s;
     margin: 10px;
