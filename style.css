@@ -1,225 +1,253 @@
 * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+   padding-top: 20px; /* adiciona espaçamento */
+   padding-right: 100px;
+   padding-left: 100px;
 }
 
 .conteudo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: normal;
+   width: 100%; /* largura */
+   display: flex;
+   justify-content: space-between; /* adiciona espaço entre os itens */
+   align-items: center; /* alinha  tudo ao centro */
 }
 
 .caixa-texto {
-    width: 600px;
+   width: 600px;
 }
 
 .caixa-imagem {
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 70px;
-    
+   width: 600px;
+   display: flex;
+   justify-content: flex-end; /* joga item todo pro lado */
+   margin-top: 250px;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 00px;
-    left: 400px;
-}
-
-h2 {
-    color: #333;
-    font-size: 60px;
-    font-weight: 500;
-}
-
-span {
-    color: #017143;
-    font-size: 70px;
-    font-weight: 900;
-}
-
-p {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
+   display: flex;
+   justify-content: center; /* joga itens para o centro */
 }
 
 button {
-    background: #017143;
-    color: white;
-    border-radius: 40px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 20px;
+   background-color: #017143; /* cor de fundo */
+   color: #ffffff; /* cor do texto */
+   border: none; /* borda */
+   padding: 10px;
+   border-radius: 20px;
 }
 
-button:hover {
-    opacity: .8;
-    transform: translateY(-4px);
+h2 {
+   font-size: 60px;
+   font-weight: 500;
 }
 
-.starbucks {
-    height: 420px;
-    z-index: 2;
-    padding: 0px;
+span {
+   color: #017143;
+   font-size: 70px; /* muda tamanho do texto */
+   font-weight: 900;  /* muda a grossura do texto */
 }
 
-.thumb1 {
-    width: 65px;
-    cursor: pointer;
-    transition: 0.8s;
-    margin: 10px;
-    margin-right: 30px;
-}
-
-.thumb2 {
-    width: 130px;
-    cursor: pointer;
-    transition: 0.8s;
-    margin: 10px;
-}
-
-.thumb3 {
-    width: 110px;
-    cursor: pointer;
-    transition: 0.8s;
-    margin: 10px;
+p {
+   font-size: 16px;
+   margin-top: 20px;
+   margin-bottom: 30px;
 }
 
 .logo {
-    height: 80px;
+   width: 80px;
 }
 
-.thumb1:hover {
-    transform: translateY(-25px);
-
+.starbucks {
+   width: 340px;
+   z-index: 2; /* define se o item está a frente ou atrás */
 }
 
-.thumb2:hover {
-    transform: translateY(-25px);
+.copo-pequeno {
+   width: 60px;
+   cursor: pointer;
+   transition: 1s;
 }
 
-.thumb3:hover {
-    transform: translateY(-25px);
+.copo-pequeno:hover {
+   transform: translateY(-35px);
 }
 
-.circulo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #017143;
-    clip-path: circle(550px at right 700px);
-    z-index: -1;
+.circulo {
+   background: #017143;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   clip-path: circle(600px at right 800px);
 }
+
 
 @media (max-width: 1000px) {
-    body {
-      padding-top: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      height: 120vh;
-  
-    }
-    .caixa-texto {
-      width: 80vw;
-      max-width: 400px;
-    }
-  
-    .conteudo {
-      display: flex;
-      flex-direction: column;
-      width: 80vw;
-    }
-  
-    .caixa-imagem {
-      width: 400px;
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 0px;
-      
-    }
-  .caixa-imagem img{
-    height: 50vh;
+  body {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 120vh;
+
   }
-    .menu {
-      display: flex;
-      position: relative;
-      top: 300px;
-      justify-content: center;
-    }
-  
-    .circulo {
-      top: -800px;
-      right: -700px;
-    }
+  .caixa-texto {
+    width: 80vw;
+    max-width: 600px;
   }
-  
-  @media (max-width: 700px) {
-   
-    
-    .conteudo {
-      height: 88vh;
-    }
-    .caixa-texto {
-      width: 80vw;
-      max-width: 400px;
-    }
-  
-    .circulo {
-      top: -800px;
-      right: -800px;
-    }
-  
-    .menu {
-      display: flex;
-      position: relative;
-      
-      justify-content: center;
-    }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
   }
-  
-  @media (max-width: 700px) {
-    body{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .logo{
-      width: 90px;
-    }
-    span{
-      font-size: 55px;
-    }
-  .circulo{
-    
-  }
-  .caixa-imagem img{
-    width: 35vh ;
-    margin-top: 20px;
-    margin-left: 100px;
-  }
-  .menu{
+
+  .caixa-imagem {
+    width: 200px;
     display: flex;
     justify-content: center;
-  }
-  }
-  @media (max-width: 380px){
+    margin-top: 20px;
     
-    }
-  
+    
+  }
+.caixa-imagem img{
+  height: 40vh;
+}
+  .menu {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+  }
+
+  .circulo {
+    top: -800px;
+    right: -700px;
+  }
+
+  h2 {
+    font-size: 45px;
+    font-weight: 450;
+ }
+
+ span {
+  font-size: 65px; /* muda tamanho do texto */
+  font-weight: 800;  /* muda a grossura do texto */
+}
+}
+
+@media (max-width: 700px) {
+ 
+  h2 {
+    font-size: 40px;
+    font-weight: 450;
+ }
+
+ span {
+  font-size: 60px; /* muda tamanho do texto */
+  font-weight: 800;  /* muda a grossura do texto */
+}
+
+  .conteudo {
+    height: 88vh;
+  }
+  .caixa-texto {
+    width: 90vw;
+    max-width: 500px;
+  }
+
+  .circulo {
+    top: -800px;
+    right: -800px;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    
+    justify-content: center;
+  }
+}
+
+@media (max-width: 470px) {
+ 
+  h2 {
+    font-size: 35px;
+    font-weight: 450;
+ }
+
+ span {
+  font-size: 50px; /* muda tamanho do texto */
+  font-weight: 800;  /* muda a grossura do texto */
+}
+
+  p{
+    font-size: 14px;
+  }
+
+  .conteudo {
+    height: 88vh;
+  }
+  .caixa-texto {
+    width: 90vw;
+    max-width: 500px;
+  }
+
+  .circulo {
+    top: -800px;
+    right: -800px;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 290px) {
+ 
+  h2 {
+    font-size: 35px;
+    font-weight: 450;
+ }
+
+ span {
+  font-size: 40px; /* muda tamanho do texto */
+  font-weight: 700;  /* muda a grossura do texto */
+}
+
+  p{
+    font-size: 14px;
+  }
+
+  .conteudo {
+    height: 88vh;
+  }
+  .caixa-texto {
+    width: 90vw;
+    max-width: 500px;
+  }
+
+  .circulo {
+    top: -800px;
+    right: -800px;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    top: 160px;
+    justify-content: center;
+  }
+
+  .caixa-imagem img{
+    height: 34vh;
+}}
